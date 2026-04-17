@@ -5,13 +5,17 @@ public class User {
 	int id;
 	String username;
 	String address;
+	String email;
 	
 	
-	public User(int id, String username, String address) {
+	
+
+	public User(int id, String username, String address, String email) {
 		super();
 		this.id = id;
 		this.username = username;
 		this.address = address;
+		this.email = email;
 	}
 
 
@@ -42,6 +46,16 @@ public class User {
 
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+
+	public String getEmail() {
+		return email;
+	}
+
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	
 	
